@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import News from '../component/news/News'
 // import SearchBar from '../component/pagecomponents/SearchBar'
 
