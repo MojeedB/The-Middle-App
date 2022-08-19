@@ -1,24 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import News from '../component/news/News'
-// import SearchBar from '../component/pagecomponents/SearchBar'
+import SearchBar from '../component/pagecomponents/SearchBar'
 
 function HomePage() {
 
-    // const [searchText, setSeacrchText] = useState('United States');
+    const [searchTerm, setSearchTerm] = useState('Education');
 
-    // const handleInput = (e) => {
-    //     const text = e.target.value;
-    //     setSeacrchText(text);
-    // };
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    // }
-
-    // const handleKeyPressed = (e) => {
-    //     if (e.key === 'Enter') {
-    //         handleSubmit();
-    //     }
+    // const onSearch = asyn(text) =>{
+    //     const result = await
     // }
 
     return (
@@ -35,8 +24,8 @@ function HomePage() {
             */}
 
             <div>
-                {/* <SearchBar /> */}
-                <News cat={`everything?q=education&`} />
+                {/* <SearchBar searchBarText={setSearchTerm} /> */}
+                <News cat={`everything?q=${searchTerm}&`} />
             </div>
 
         </div>
